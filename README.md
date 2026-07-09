@@ -14,8 +14,8 @@ The flow diagram below demonstrates how the Packet Sniffer captures, stores, par
 flowchart TD
     A["Network Interface (NIC)"] -->|Raw Frame Stream| B["libpcap Engine"]
     B -->|pcap_open_live| C["Capture Loop (pcap_dispatch)"]
-    C -->|Signal Interrupt (Ctrl+C)| Menu["Main Menu Interface"]
-    C -->|Callback (p_handler)| D["Parser & Storage Dispatcher"]
+    C -->|Signal Interrupt via Ctrl-C| Menu["Main Menu Interface"]
+    C -->|Callback via p_handler| D["Parser & Storage Dispatcher"]
     D -->|Buffer Packet| E[("In-Memory Session Storage (MAX: 10k Packets)")]
     D -->|Deep Parse| L2["Layer 2 Parser (Ethernet Header)"]
     
