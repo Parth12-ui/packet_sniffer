@@ -1,16 +1,16 @@
-# 🦈 C-Shark: The Terminal Packet Sniffer
+# Packet Sniffer: The Terminal Packet Sniffer
 
-This directory contains the main source code, headers, and build configuration for **C-Shark**, a terminal-only packet sniffer written in C and powered by `libpcap`.
+This directory contains the main source code, headers, and build configuration for Packet Sniffer, a terminal-only packet sniffer written in C and powered by libpcap.
 
 > [!NOTE]  
-> For the comprehensive project documentation, architecture diagrams, detailed feature explanations, and user guide, please refer to the main **[README.md](../README.md)** in the project root directory.
+> For the comprehensive project documentation, architecture diagrams, detailed feature explanations, and user guide, please refer to the main [README.md](../README.md) in the project root directory.
 
 ---
 
-## 🛠️ Quick Start
+## Quick Start
 
 ### 1. Build the Executable
-Compile all files and generate the `c_shark` binary:
+Compile all files and generate the executable:
 ```bash
 make
 ```
@@ -29,7 +29,7 @@ make clean
 
 ---
 
-## 📁 Directory Structure
+## Directory Structure
 
 *   **[include/](include/)**: Header files declaring structures, functions, and global constants.
     *   `functions.h`: Packet parser routines, menu interfaces, and signal handlers.
